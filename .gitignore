@@ -1,0 +1,12 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.env
+mlruns/
+mlflow.db
+chroma_db/
+*.mp3
+.DS_Store
+.venv/
+venv/
