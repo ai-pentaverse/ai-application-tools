@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Assistant - AI Fridays</title>
+ 
+<link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+ 
+<div class="slides">
+ 
+    <!-- Slide 1 -->
+    <section class="slide active">
+        <h1>Knowledge Assistant</h1>
+        <h3>Enterprise RAG System</h3>
+ 
+        <p class="tagline">
+            AI Fridays Hackathon
+        </p>
+ 
+        <div class="team">
+            <h2>Tech Stack</h2>
+ 
+            <div class="chips">
+                <span>React</span>
+                <span>Vite</span>
+                <span>Python</span>
+                <span>LangChain</span>
+                <span>RAG</span>
+                <span>LLM</span>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Slide 2 -->
+    <section class="slide">
+ 
+        <h1>Problem Statement</h1>
+ 
+        <div class="card">
+            Employees spend significant time searching
+            enterprise documents like:
+            <br><br>
+ 
+            • Policies<br>
+            • Contracts<br>
+            • SOPs<br>
+            • Knowledge Base
+ 
+            <br><br>
+ 
+            Existing search returns documents,
+            not direct answers.
+        </div>
+ 
+    </section>
+ 
+    <!-- Slide 3 -->
+ 
+    <section class="slide">
+ 
+        <h1>Our Solution</h1>
+ 
+<div class="flow">
+ 
+User
+ 
+↓
+ 
+React + Vite
+ 
+↓
+ 
+Python API
+ 
+↓
+ 
+LangChain
+ 
+↓
+ 
+Retriever
+ 
+↓
+ 
+LLM
+ 
+↓
+ 
+Grounded Answer
+ 
+</div>
+ 
+    </section>
+ 
+    <!-- Slide 4 -->
+ 
+<section class="slide">
+ 
+<h1>Features</h1>
+ 
+<div class="grid">
+ 
+<div class="box">
+Upload Documents
+</div>
+ 
+<div class="box">
+Semantic Search
+</div>
+ 
+<div class="box">
+Source Citations
+</div>
+ 
+<div class="box">
+Fast Responses
+</div>
+ 
+<div class="box">
+Enterprise Ready
+</div>
+ 
+<div class="box">
+Secure RAG
+</div>
+ 
+</div>
+ 
+</section>
+ 
+<!-- Slide 5 -->
+ 
+<section class="slide">
+ 
+<h1>Architecture</h1>
+ 
+<div class="architecture">
+ 
+User
+ 
+↓
+ 
+Frontend
+ 
+↓
+ 
+Backend API
+ 
+↓
+ 
+LangChain
+ 
+↓
+ 
+Vector DB
+ 
+↓
+ 
+LLM
+ 
+↓
+ 
+Answer + Evidence
+ 
+</div>
+ 
+</section>
+ 
+<!-- Slide 6 -->
+ 
+<section class="slide">
+ 
+<h1>Demo</h1>
+ 
+<img src="demo.png" class="demo">
+ 
+</section>
+ 
+<!-- Slide 7 -->
+ 
+<section class="slide">
+ 
+<h1>Thank You</h1>
+ 
+<h2>Questions?</h2>
+ 
+<p class="tagline">
+Team AI Fridays 🚀
+</p>
+ 
+</section>
+ 
+</div>
+ 
+<div class="controls">
+<button onclick="prevSlide()">◀</button>
+<button onclick="nextSlide()">▶</button>
+</div>
+ 
+<script>
+ 
+let current=0;
+ 
+const slides=document.querySelectorAll(".slide");
+ 
+function show(){
+ 
+slides.forEach(s=>s.classList.remove("active"));
+ 
+slides[current].classList.add("active");
+ 
+}
+ 
+function nextSlide(){
+ 
+current=(current+1)%slides.length;
+ 
+show();
+ 
+}
+ 
+function prevSlide(){
+ 
+current=(current-1+slides.length)%slides.length;
+ 
+show();
+ 
+}
+ 
+document.addEventListener("keydown",e=>{
+ 
+if(e.key==="ArrowRight")nextSlide();
+ 
+if(e.key==="ArrowLeft")prevSlide();
+ 
+});
+ 
+</script>
+ 
+</body>
+</html>
+ 
